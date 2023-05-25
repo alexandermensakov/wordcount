@@ -1,10 +1,13 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React from 'react';
+import WordCounter from './WordCounter';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const App = () => {
   return (
-    <div></div>
-  )
-}
+    <div>
+      <h1>Word Counter</h1>
+      <WordCounter />
+    </div>
+  );
+};
+
+export default App;
